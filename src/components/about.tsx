@@ -13,19 +13,6 @@ import {
 import themeContext from '@/components/themeContext';
 import { data } from 'portfolio.config';
 
-const DATA = [
-  {
-    title: 'Twitter',
-    href: 'https://twitter.com/whilejosh',
-    icon: <IoLogoTwitter size={20} />,
-  },
-  {
-    title: 'Github',
-    href: 'https://github.com/joshnwosu',
-    icon: <IoLogoGithub size={20} />,
-  },
-];
-
 const About: React.FC = () => {
   const theme = React.useContext(themeContext);
   const [mode, setMode] = React.useState(false);
@@ -82,7 +69,7 @@ const About: React.FC = () => {
           <Image src={data.avatar} alt="My Image" width={40} height={40} />;
         </div>
         <ul className={styles.socials}>
-          {DATA.map(({ title, icon, href }, index) => (
+          {data.socials.map(({ title, icon, href }, index) => (
             <li key={index} className={styles.socials_li}>
               <a
                 href={href}
