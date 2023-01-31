@@ -1,16 +1,16 @@
-import React from "react";
-import styles from "@/styles/Home.module.css";
-import { IoIosClose } from "react-icons/io";
-import themeContext from "./themeContext";
+import React from 'react';
+import styles from '@/styles/Home.module.css';
+import { IoIosClose } from 'react-icons/io';
+import themeContext from './themeContext';
 
-import { Document, Page, pdfjs } from "react-pdf";
+import { Document, Page, pdfjs } from 'react-pdf';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const options = {
-  cMapUrl: "cmaps/",
+  cMapUrl: 'cmaps/',
   cMapPacked: true,
-  standardFontDataUrl: "standard_fonts/",
+  standardFontDataUrl: 'standard_fonts/',
 };
 // https://drive.google.com/file/d/1HylNDppAju6kj5Xhs4zZb9yk4hLSnuN1/view?usp=share_link
 
@@ -22,7 +22,7 @@ export default function Resume() {
       className={[
         styles.resume,
         theme.setToggleResume && styles.resume__active,
-      ].join(" ")}
+      ].join(' ')}
     >
       <div
         className={styles.resume__close}
@@ -34,7 +34,7 @@ export default function Resume() {
       </div>
       <div className={styles.resume__wrapper}>
         <Document
-          file={"Joshua_resume.pdf"}
+          file={'Jerry_Resume.pdf'}
           options={options}
           className={styles.resume__pdf}
           renderMode="canvas"
