@@ -33,7 +33,7 @@ const Hello = () => {
               fill="none"
               stroke="#3c3c43eb"
               stroke-miterlimit="10"
-              stroke-width="5"
+              strokeWidth="5"
             />
             <path
               id="Path_6"
@@ -43,7 +43,7 @@ const Hello = () => {
               fill="none"
               stroke="#3c3c43eb"
               stroke-miterlimit="10"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
         </svg>
