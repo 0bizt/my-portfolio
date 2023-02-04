@@ -60,8 +60,7 @@ const About: React.FC = () => {
               As a self-motivated individual, I am constantly seeking new
               challenges and opportunities to expand my knowledge and skills.
             </p>
-
-            <p className={[styles.desc, styles.mt_8].join(' ')}>
+            <p className={[styles.desc, styles.mt_16].join(' ')}>
               💬 Download my{' '}
               <a
                 href="https://drive.google.com/file/d/1rruGleyOBeyldk9aQKZmcyLhBdaLQhkZ/view?usp=sharing"
