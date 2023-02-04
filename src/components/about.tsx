@@ -12,6 +12,7 @@ import {
 } from 'react-icons/io';
 import themeContext from '@/components/themeContext';
 import { data } from 'portfolio.config';
+import Dot from './dot';
 
 const About: React.FC = () => {
   const theme = React.useContext(themeContext);
@@ -59,9 +60,21 @@ const About: React.FC = () => {
               As a self-motivated individual, I am constantly seeking new
               challenges and opportunities to expand my knowledge and skills.
             </p>
+
+            <p className={[styles.desc, styles.mt_8].join(' ')}>
+              💬 Download my{' '}
+              <a
+                href="https://drive.google.com/file/d/1rruGleyOBeyldk9aQKZmcyLhBdaLQhkZ/view?usp=sharing"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Résumé
+              </a>{' '}
+            </p>
           </div>
         </div>
         <Nav />
+        {/* <Dot /> */}
       </div>
 
       <div className={styles.footer}>
