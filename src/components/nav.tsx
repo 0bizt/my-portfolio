@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "@/styles/Home.module.css";
-import ScrollspyNav from "@/components/scrollspyNav";
-import themeContext from "./themeContext";
+import React from 'react';
+import styles from '@/styles/Home.module.css';
+import ScrollspyNav from '@/components/scrollspyNav';
+import themeContext from './themeContext';
 
 const links = [
-  { id: 1, title: "Projects", href: "projects" },
-  { id: 2, title: "Blog", href: "blog" },
+  { id: 1, title: 'Projects', href: 'projects' },
+  { id: 2, title: 'Articles', href: 'articles' },
   // { id: 3, title: "Get in touch", href: "contact" },
   // { id: 4, title: "Resume" },
 ];
@@ -15,7 +15,7 @@ export default function Nav() {
   return (
     <nav className={styles.nav}>
       <ScrollspyNav
-        scrollTargetIds={["projects", "blog"]}
+        scrollTargetIds={['projects', 'articles']}
         offset={-100}
         activeNavClass="is-active"
         scrollDuration="500"
