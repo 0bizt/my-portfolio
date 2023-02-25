@@ -8,12 +8,12 @@ export const data = {
   socials: [
     {
       title: 'Twitter',
-      href: 'https://twitter.com/0bizt',
+      href: 'https://twitter.com/geekreflex',
       icon: <IoLogoTwitter size={20} />,
     },
     {
       title: 'Github',
-      href: 'https://github.com/0bizt',
+      href: 'https://github.com/geekreflex',
       icon: <IoLogoGithub size={20} />,
     },
   ],
