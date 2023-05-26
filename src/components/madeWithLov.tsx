@@ -1,23 +1,23 @@
-import React from "react";
-import styles from "@/styles/Home.module.css";
-import { data } from "portfolio.config";
+import React from 'react';
+import styles from '@/styles/Home.module.css';
+import { data } from 'portfolio.config';
 
 const MadeWithLove = () => {
   return (
     <div className={styles.madeWithLove}>
       <p className={styles.madeWithLove_para}>
-        Made with 🥤 by{" "}
+        Made with 🥤 by{' '}
         <a
-          href="https://github.com/0dizt"
+          href="https://github.com/joshnwosu"
           target="_blank"
           rel="noreferrer"
           className={styles.madeWithLove_link}
         >
           Joshua
-        </a>{" "}
-        &amp;{" "}
+        </a>{' '}
+        &amp;{' '}
         <a
-          href="https://github.com/0bizt"
+          href="https://github.com/geekreflex"
           target="_blank"
           rel="noreferrer"
           className={styles.madeWithLove_link}
