@@ -26,11 +26,13 @@ export default function Nav() {
           {links.map(({ id, title, href }, index) => {
             if (title === 'Blog') {
               return (
-                <a href={href} className={styles.nav__link}>
-                  <span className={styles.nav__index}>0{index + 1}</span>
-                  <span data-line className={styles.nav__line}></span>
-                  <span className={styles.nav__title}>{title}</span>
-                </a>
+                <li key={id} className={styles.nav__li}>
+                  <a href={href} className={styles.nav__link}>
+                    <span className={styles.nav__index}>0{index + 1}</span>
+                    <span data-line className={styles.nav__line}></span>
+                    <span className={styles.nav__title}>{title}</span>
+                  </a>
+                </li>
               );
             } else {
               return (
